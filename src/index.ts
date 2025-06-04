@@ -2,7 +2,7 @@
 // import './generics'
 // import './keyof'
 // import './types'
-import './anyVsUnknown'
+// import './anyVsUnknown'
 
 const newName:string="My name is something"
 
