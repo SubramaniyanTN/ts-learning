@@ -6,8 +6,12 @@ const unKnownName:unknown="something"
 
 
 stringName.indexOf("3") //indexOf method is for string
-numberName.indexOf("3")
+// numberName.indexOf("3")
 anyName.indexOf("3")
+if(typeof unKnownName ==='string'){
+    unKnownName.indexOf("3")
+}
+date.getFullYear()
 
 
 // date.getFullYear()

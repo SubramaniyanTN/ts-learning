@@ -22,3 +22,13 @@ export type ReportsResponseType={
         reportName:string;
     }>
 }
+export type Generic<T,M=string>={
+    http_code:number;
+    status:string;
+    message:M;
+    data:T
+}
+
+export type ReportsGenericResponseType=Generic<{
+        reportName:string;
+    }>

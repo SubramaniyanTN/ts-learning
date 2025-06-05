@@ -1,15 +1,22 @@
-type DetailsType={
+interface DetailsType{
   name:string;
-  role:string
+  role:number
+  newName?:string
 }
 
 const details:DetailsType={
   name:"",
-  role:""
+  role:3,
+  newName:""
 }
 
-const onChange=(key:string,value:string)=>{
-//   details[key]=value
+details["name"]
+
+const onChange=<T extends keyof DetailsType>(key:T,value:DetailsType[T])=>{
+  details[key]=value
 }
 
-// onChange("lklrlekrlekrle","kejrekr")
+onChange("role",34)
+onChange("newName","wew")
+
+const returnSameValue=<T>(a:T):T=>a
