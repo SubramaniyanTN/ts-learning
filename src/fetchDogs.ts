@@ -1,5 +1,5 @@
 import axios, { AxiosResponse } from "axios";
-import { DogsResponseType } from "./dogResponseType";
+import { DogsResponseType } from "./types/dogResponseType";
 
 
 export const fetchDogs=async()=>{

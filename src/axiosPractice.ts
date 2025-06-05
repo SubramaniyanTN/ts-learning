@@ -1,7 +1,8 @@
 import axios, { AxiosResponse } from "axios"
 import {z} from 'zod'
-import { BankHoliday, BankHolidaySchema } from "./ukHolidayTypes"
-import { DogSchema, DogsResponseSchema, DogsResponseType } from "./dogResponseType"
+import { BankHoliday, BankHolidaySchema } from "./types/ukHolidayTypes"
+import { DogSchema, DogsResponseSchema, DogsResponseType } from "./types/dogResponseType"
+import { CatBreedSchema, CatBreedType } from "./types/catResponseType"
 
 // Bank Holidays
 // let holidays:Array<BankHoliday>=[]
@@ -38,14 +39,35 @@ import { DogSchema, DogsResponseSchema, DogsResponseType } from "./dogResponseTy
 // }
 // const fetchDogs=async()=>{
 //     try {
-//         const response=await axios.get(`https://dogapi.dog/api/v2/breeds`,{
-//         })
+//         const response=await axios.get("https://dogapi.dog/api/v2/breeds")
 //         setDogs(response.data)
 //     } catch (error) {
 //         console.log(error)
 //     }
 // }
 // fetchDogs()
+
+// Cats
+
+// let cats:Array<any>=[]
+// const setCats=(response:CatBreedType[])=>{
+//     try {
+//       const parsed = z.array(CatBreedSchema).parse(response)
+//       console.log("Types are Correctly matched ✅")
+//       cats=[...cats,...parsed]
+//     } catch (error) {
+//       console.log("Oops, Type mismatch ❌")
+//     }
+// }
+// const fetchCats=async()=>{
+//     try {
+//         const response=await axios.get("https://catfact.ninja/breeds")
+//         setCats(response.data)
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }
+// fetchCats()
 
 
 
