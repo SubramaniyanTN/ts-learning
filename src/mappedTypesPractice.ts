@@ -15,4 +15,5 @@ type SecondaryDetailsType={
     userGuardianName?:string
 }
 
-// 1. Make this readonly and required type
+// 1. Make this readonly and required type]
+

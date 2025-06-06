@@ -32,3 +32,7 @@ export type Generic<T,M=string>={
 export type ReportsGenericResponseType=Generic<{
         reportName:string;
     }>
+
+    const returnSameValue=<T>(a:T):T=>a
+
+    returnSameValue(10)
