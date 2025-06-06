@@ -35,7 +35,7 @@ import { CatBreedSchema, CatBreedType } from "./types/catResponseType"
 //       dogs=[...dogs,...parsed]
 //     } catch (error) {
 //       console.log("Oops, Type mismatch ❌")
-//     }
+//     }≥
 // }
 // const fetchDogs=async()=>{
 //     try {
@@ -68,6 +68,10 @@ import { CatBreedSchema, CatBreedType } from "./types/catResponseType"
 //     }
 // }
 // fetchCats()
+
+const returnSameValue=<T>(a:T)=>a
+
+returnSameValue(90)
 
 
 
